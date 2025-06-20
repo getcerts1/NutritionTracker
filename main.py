@@ -72,7 +72,6 @@ def natural_lang_for_exercise():
 
             print(f"{i+1}:{new_row["workout"]["exercise"]} --- {new_row["workout"]["duration"]} --- {new_row["workout"]["calories"]}")
 
-            #make HTTP POST request to sheety
             sheety_post_request(SHEETY_API_POST_ENDPOINT, new_row, header=POST_HEADER)
 
         return data
